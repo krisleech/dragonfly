@@ -1,6 +1,8 @@
 Dragonfly
 ===========
 
+NOTE: This version (https://github.com/krisleech/dragonfly) is patched to work with TorqueBox's Virtual File System.
+
 Dragonfly is a <a href="http://rack.rubyforge.org">Rack</a> framework for on-the-fly image handling.
 
 Ideal for using with Ruby on Rails (2.3 and 3), Sinatra and all that gubbins.

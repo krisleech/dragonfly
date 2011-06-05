@@ -49,6 +49,8 @@ module Dragonfly
       end
 
       def run(command)
+       command.gsub!('vfs:', '') # Remove the path prefix which is added by TorqueBox due to its patching of the File/Dir classes to work with their Virtual File System.
+
         log.debug("Running command: #{command}") if log_commands
         begin
           result = `#{command}`
